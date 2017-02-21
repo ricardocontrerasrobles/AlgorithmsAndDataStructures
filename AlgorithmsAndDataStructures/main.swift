@@ -8,5 +8,13 @@
 
 import Foundation
 
-print("Hello, World!")
+print("- Test StackLinkedList")
+let stackTestClient = StackTestClientString(stack: StackLinkedList<String>())
+stackTestClient.test()
+
+print("- Test StackArray")
+stackTestClient.stack = StackArray<String>()
+stackTestClient.test()
+
+print("Done")
 
